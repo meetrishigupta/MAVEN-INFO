@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d9ebc4992c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <title>Design By Rishi</title>
+  </head>
+  <body>
+    <div class="wrapper_main">
+      <div class="alert alert_hero fw-bold py-2 mb-0" role="alert">
+        <div class="text">
+          Sign up and get 20% off to your first order. Sign Up Now
+        </div>
+        <span
+          ><i class="fa-regular fa-circle-xmark" style="color: #ffffff"></i
+        ></span>
+      </div>
+      <!-- nav section -->
+      <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              
+                <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center  sm:justify-start"
+            >
+              <div class="flex flex-shrink-0 items-center">
+                <img
+                  class="h-8 w-32"
+                  src="assets/SHOP.CO.svg"
+                  alt="Your Company"
+                />
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4 nav_section">
+                  <!-- Current: " text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="#"
+                    class="text-black hover:text-site_blue px-3 py-2 text-sm font-extrabold	 "
+                    aria-current="page"
+                    >Shop</a
+                  >
+                  <a
+                    href="#"
+                    class="text-black hover:text-site_blue px-3 py-2 text-sm font-extrabold	 "
+                    >On Sale</a
+                  >
+                  <a
+                    href="#"
+                    class="text-black hover:text-site_blue px-3 py-2 text-sm font-extrabold	 "
+                    >New Arrivals</a
+                  >
+                  <a
+                    href="#"
+                    class="text-black hover:text-site_blue  px-3 py-2 text-sm font-extrabold	 "
+                    >Brands</a
+                  >
+                </div>
+                
+              </div>
+            
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+              <button
+                type="button"
+                class="relative rounded-full bg-white-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-site_blue""
+              >
+                <span class="absolute -inset-1.5"></span>
+               
+             
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.375 20.25C9.375 20.6208 9.26503 20.9834 9.059 21.2917C8.85298 21.6 8.56014 21.8404 8.21753 21.9823C7.87492 22.1242 7.49792 22.1613 7.1342 22.089C6.77049 22.0166 6.4364 21.838 6.17417 21.5758C5.91195 21.3136 5.73337 20.9795 5.66103 20.6158C5.58868 20.2521 5.62581 19.8751 5.76773 19.5325C5.90964 19.1899 6.14996 18.897 6.45831 18.691C6.76665 18.485 7.12916 18.375 7.5 18.375C7.99728 18.375 8.47419 18.5725 8.82582 18.9242C9.17745 19.2758 9.375 19.7527 9.375 20.25ZM17.25 18.375C16.8792 18.375 16.5166 18.485 16.2083 18.691C15.9 18.897 15.6596 19.1899 15.5177 19.5325C15.3758 19.8751 15.3387 20.2521 15.411 20.6158C15.4834 20.9795 15.662 21.3136 15.9242 21.5758C16.1864 21.838 16.5205 22.0166 16.8842 22.089C17.2479 22.1613 17.6249 22.1242 17.9675 21.9823C18.3101 21.8404 18.603 21.6 18.809 21.2917C19.015 20.9834 19.125 20.6208 19.125 20.25C19.125 19.7527 18.9275 19.2758 18.5758 18.9242C18.2242 18.5725 17.7473 18.375 17.25 18.375ZM22.0753 7.08094L19.5169 15.3966C19.3535 15.9343 19.0211 16.4051 18.569 16.739C18.1169 17.0729 17.5692 17.2521 17.0072 17.25H7.77469C7.2046 17.2482 6.65046 17.0616 6.1953 16.7183C5.74015 16.3751 5.40848 15.8936 5.25 15.3459L2.04469 4.125H1.125C0.826631 4.125 0.540483 4.00647 0.329505 3.7955C0.118526 3.58452 0 3.29837 0 3C0 2.70163 0.118526 2.41548 0.329505 2.2045C0.540483 1.99353 0.826631 1.875 1.125 1.875H2.32687C2.73407 1.87626 3.12988 2.00951 3.45493 2.25478C3.77998 2.50004 4.01674 2.84409 4.12969 3.23531L4.81312 5.625H21C21.1761 5.62499 21.3497 5.6663 21.5069 5.74561C21.664 5.82492 21.8004 5.94001 21.905 6.08164C22.0096 6.22326 22.0795 6.38746 22.1091 6.56102C22.1387 6.73458 22.1271 6.91266 22.0753 7.08094ZM19.4766 7.875H5.45531L7.41375 14.7281C7.43617 14.8065 7.48354 14.8755 7.54867 14.9245C7.6138 14.9736 7.69315 15.0001 7.77469 15H17.0072C17.0875 15.0002 17.1656 14.9746 17.2303 14.927C17.2949 14.8794 17.3426 14.8123 17.3662 14.7356L19.4766 7.875Z" fill="#1C71FF"/>
+  </svg>
+  
+              </button>
+
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button
+                    type="button"
+                    class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-site_blue"
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+               
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1.875C9.99747 1.875 8.0399 2.46882 6.37486 3.58137C4.70981 4.69392 3.41206 6.27523 2.64572 8.12533C1.87939 9.97543 1.67888 12.0112 2.06955 13.9753C2.46023 15.9393 3.42454 17.7435 4.84055 19.1595C6.25656 20.5755 8.06066 21.5398 10.0247 21.9305C11.9888 22.3211 14.0246 22.1206 15.8747 21.3543C17.7248 20.5879 19.3061 19.2902 20.4186 17.6251C21.5312 15.9601 22.125 14.0025 22.125 12C22.122 9.3156 21.0543 6.74199 19.1562 4.84383C17.258 2.94567 14.6844 1.87798 12 1.875ZM7.45969 18.4284C7.98195 17.7143 8.66528 17.1335 9.45418 16.7331C10.2431 16.3327 11.1153 16.124 12 16.124C12.8847 16.124 13.7569 16.3327 14.5458 16.7331C15.3347 17.1335 16.0181 17.7143 16.5403 18.4284C15.2134 19.3695 13.6268 19.875 12 19.875C10.3732 19.875 8.78665 19.3695 7.45969 18.4284ZM9.375 11.25C9.375 10.7308 9.52896 10.2233 9.8174 9.79163C10.1058 9.35995 10.5158 9.0235 10.9955 8.82482C11.4751 8.62614 12.0029 8.57415 12.5121 8.67544C13.0213 8.77672 13.489 9.02673 13.8562 9.39384C14.2233 9.76096 14.4733 10.2287 14.5746 10.7379C14.6759 11.2471 14.6239 11.7749 14.4252 12.2545C14.2265 12.7342 13.8901 13.1442 13.4584 13.4326C13.0267 13.721 12.5192 13.875 12 13.875C11.3038 13.875 10.6361 13.5984 10.1438 13.1062C9.65157 12.6139 9.375 11.9462 9.375 11.25ZM18.1875 16.8694C17.4583 15.9419 16.5289 15.1914 15.4688 14.6737C16.1444 13.9896 16.6026 13.1208 16.7858 12.1769C16.9689 11.2329 16.8688 10.2558 16.498 9.36861C16.1273 8.4814 15.5024 7.72364 14.702 7.19068C13.9017 6.65771 12.9616 6.37334 12 6.37334C11.0384 6.37334 10.0983 6.65771 9.29797 7.19068C8.49762 7.72364 7.87275 8.4814 7.50198 9.36861C7.13121 10.2558 7.0311 11.2329 7.21424 12.1769C7.39739 13.1208 7.85561 13.9896 8.53125 14.6737C7.4711 15.1914 6.54168 15.9419 5.8125 16.8694C4.89661 15.7083 4.32614 14.3129 4.1664 12.8427C4.00665 11.3725 4.2641 9.88711 4.90925 8.55644C5.55441 7.22578 6.5612 6.10366 7.81439 5.31855C9.06757 4.53343 10.5165 4.11703 11.9953 4.11703C13.4741 4.11703 14.9231 4.53343 16.1762 5.31855C17.4294 6.10366 18.4362 7.22578 19.0814 8.55644C19.7265 9.88711 19.984 11.3725 19.8242 12.8427C19.6645 14.3129 19.094 15.7083 18.1781 16.8694H18.1875Z" fill="#1C71FF"/>
+  </svg>
+  
+                  </button>
+                </div>
+
+                <!--
+            Dropdown menu, show/hide based on menu state.
+
+            Entering: "transition ease-out duration-100"
+              From: "transform opacity-0 scale-95"
+              To: "transform opacity-100 scale-100"
+            Leaving: "transition ease-in duration-75"
+              From: "transform opacity-100 scale-100"
+              To: "transform opacity-0 scale-95"
+          -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="#"
+              class=" text-black   hover:text-site_blue  block rounded-md px-3 py-2 text-base font-extrabold	"
+              aria-current="page"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-site_blue block rounded-md px-3 py-2 text-base font-extrabold	"
+              >On Sale</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-site_blue block rounded-md px-3 py-2 text-base font-extrabold	"
+              >New Arrivals</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-site_blue block rounded-md px-3 py-2 text-base font-extrabold	"
+              >Brands</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="bg-[#F2F0F1]">
+        <div class="container px-0 ">
+          <div class="row hero_section">
+            <div class="col-lg py-16">
+              <h1 class="text-site_blue font-extrabold text-4xl md:text-7xl w-98">FIND CLOTHES THAT MATCH YOUR STYLE</h1>
+              <p class="text-black-400 font-semibold mt-4">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+  <button class="px-8 py-2 mt-4 rounded-full bg-site_blue hover:bg-site_blue-400 hover:bg-opacity-70 text-white font-extrabold text-md">
+    Shop now
+  </button>
+  <div class="container mt-5">
+    <div class="row ranking_sec">
+      <div class="col-sm p-2 mb-3">
+        <p class="font-extrabold	text-5xl 	text-black	">200<span class="text-site_blue text-3xl align-middle	">+</span></p>
+        <p class="text-sub_text mt-2 font-semibold text-base" >International Brands</p>
+            </div>
+      <div class="col-sm p-2 mb-3">
+        <p class="font-extrabold	text-5xl	text-black	">2,000<span class="text-site_blue text-3xl align-middle	">+</span></p>
+        <p class="text-sub_text mt-2 font-semibold text-base" >High-Quality Products</p>
+      </div>
+      <div class="col-sm p-2 mb-3">
+        <p class="font-extrabold	text-5xl	text-black	">30,000<span class="text-site_blue text-3xl align-middle	">+</span></p>
+        <p class="text-sub_text mt-2 font-semibold text-base" >Happy Customers</p>
+      </div>
+    </div>
+  </div>
+            </div>
+            <div class="col-sm d-flex align-bottom">
+        <img class="hero_image" src="./assets/hero_image.png" alt="">
+            </div>
+        
+          </div>
+        </div>
+      </div>
+      <div class="bg-site_blue">
+        <div class="container max-w-7xl py-4  ">
+          <div class="row ">
+            <div class="col-sm d-flex justify-center py-3">
+<img src="./assets/Group-1.svg" alt="calvin">
+            </div>
+            <div class="col-sm d-flex justify-center py-3">
+              <img src="./assets/Group.svg" alt="calvin">
+            </div>
+            <div class="col-sm d-flex justify-center py-3">
+              <img src="./assets/prada-logo-1 1.svg" alt="calvin">
+            </div>
+            
+            <div class="col-sm d-flex justify-center py-3">
+              <img src="./assets/gucci-logo-1 1.svg" alt="calvin">
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="max-w-7xl py-20 d-flex flex-col border-b border-black-100" style="margin: 0 auto;" >
+  <h2 class="text-center font-extrabold	text-5xl	text-black	">NEW ARRIVALS</h2>
+<div class="d-flex flex-wrap py-9 justify-center">
+  
+  <a href="#" class="block max-w-xs p-2 bg-white mr-1rounded-lg  hover:bg-gray-100 ">
+<img src="assets/Frame 32.png"  alt="">
+  <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">T-SHIRT WITH TAPE DETAILS</h5>
+
+  <img src="./assets/Frame 35.png" alt="" class="mt-2">
+  <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$120</h5>
+
+    </a>
+    <a href="#" class="block max-w-xs	p-2 bg-white mr-1 rounded-lg  hover:bg-gray-100 ">
+    <img src="assets/Frame 33.png"  alt="">
+      <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">SKINNY FIT JEANS</h5>
+    
+      <img src="./assets/Frame 35.png" alt="" class="mt-2">
+      <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$240</h5>
+    
+      </a>
+      <a href="#" class="block max-w-xs p-2 bg-white mr-1 rounded-lg  hover:bg-gray-100 ">
+        <img src="assets/Frame 34.png "  alt="">
+          <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">CHECKERED SHIRT</h5>
+        
+          <img src="./assets/Frame 35.png" alt="" class="mt-2">
+          <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$180</h5>
+        
+          </a>
+          <a href="#" class="block max-w-xs p-2 bg-white mr-1 rounded-lg  hover:bg-gray-100 ">
+            <img src="assets/Frame 38.png"  alt="">
+              <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">SLEEVE STRIPED T-SHIRT</h5>
+            
+              <img src="./assets/Frame 35.png" alt="" class="mt-2">
+              <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$130</h5>
+              </a>
+        
+  </div>
+
+  <button class="py-2 mt-4 rounded-full bg-white hover:text-white text-site_blue hover:text-white font-semibold text-sm w-36 text-center border border-site_blue" style="margin: auto">
+
+
+    View all
+  </button>
+</div>
+
+
+
+<div class="max-w-7xl py-20 d-flex flex-col border-b border-black-100" style="margin: 0 auto;" >
+  <h2 class="text-center font-extrabold	text-5xl	text-black	">TOP SELLING</h2>
+<div class="d-flex flex-wrap py-9 justify-center">
+  
+  <a href="#" class="block max-w-xs p-2 bg-white mr-1rounded-lg  hover:bg-gray-100 ">
+<img src="assets/image_1.png"  alt="">
+  <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">VERTICAL STRIPED SHIRT</h5>
+
+  <img src="./assets/Frame 35.png" alt="" class="mt-2">
+  <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$212</h5>
+
+    </a>
+    <a href="#" class="block max-w-xs	p-2 bg-white mr-1 rounded-lg  hover:bg-gray-100 ">
+    <img src="assets/image_2.png"  alt="">
+      <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">COURAGE GRAPHIC T-SHIRT</h5>
+    
+      <img src="./assets/Frame 35.png" alt="" class="mt-2">
+      <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$145</h5>
+    
+      </a>
+      <a href="#" class="block max-w-xs p-2 bg-white mr-1 rounded-lg  hover:bg-gray-100 ">
+        <img src="assets/image_3.png "  alt="">
+          <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">LOOSE FIT BERMUDA SHORTS</h5>
+        
+          <img src="./assets/Frame 35.png" alt="" class="mt-2">
+          <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$80</h5>
+        
+          </a>
+          <a href="#" class="block max-w-xs p-2 bg-white mr-1 rounded-lg  hover:bg-gray-100 ">
+            <img src="assets/image_4.png"  alt="">
+              <h5 class="mb-2 text-xl mt-4	 font-extrabold  text-black ">FADED SKINNY JEANS</h5>
+            
+              <img src="./assets/Frame 35.png" alt="" class="mt-2">
+              <h5 class="mb-2 text-xl mt-2	 font-extrabold  text-black ">$210</h5>
+              </a>
+        
+  </div>
+
+  <button class="py-2 mt-4 rounded-full bg-white hover:text-white text-site_blue hover:text-white font-semibold text-sm w-36 text-center border border-site_blue" style="margin: auto">
+    View all
+  </button>
+</div>
+<div class="py-20">
+
+  <div class="max-w-7xl py-16 d-flex flex-col px-10 rounded-3xl  bg-site_blue" style="margin: 0 auto;" >
+    <h2 class="text-center font-extrabold	text-5xl pb-10	text-white">DRESS STYLES</h2>
+    <div class="flex justify-center relative categories_sec" >
+      <div class="mr-10 relative"> <!-- 40% width -->
+          <img src="assets/Frame 61.png" alt="">    
+          <!-- Text overlay on the first image -->
+          <p class="absolute bottom-0 right-0 top-5 left-5 text-black text-3xl font-extrabold p-2">Casual</p>
+      </div>
+      <div class="relative"> <!-- 60% width -->
+          <img src="assets/Frame 62.png" alt="">
+          <!-- Text overlay on the second image -->
+          <p class="absolute bottom-0 right-0 top-5 left-5 text-black text-3xl font-extrabold p-2">Formal</p>
+      </div>
+  </div>
+  
+  <div class="flex justify-center mt-10 relative categories_sec" id="categories_sec_two">
+    <div class="mr-10 relative"> <!-- 40% width -->
+        <img src="assets/Frame 64.png" alt="">    
+        <!-- Text overlay on the first image -->
+        <p class="absolute bottom-0 right-0 top-5 left-5 text-black text-3xl font-extrabold p-2">Party</p>
+      </div>
+    <div class="relative"> <!-- 60% width -->
+        <img src="assets/Frame 63.png" alt="">
+        <!-- Text overlay on the second image -->
+        <p class="absolute bottom-0 right-0 top-5 left-5 text-black text-3xl font-extrabold p-2">Gym</p>
+      </div>
+  </div>
+    </div>
+</div>
+
+<div class="bg-gray-200 sec_footer px-3">
+
+  <div class="max-w-7xl py-20 flex flex-col md:flex-row justify-center md:flex-wrap">
+    <div class=" md:w-3/10 pr-10 mb-8 md:mb-0">
+      <img src="/assets/SHOP.CO.svg" alt="logo_footer">
+      <p class="text-black text-sm font-bold mt-3 md:w-60">We have clothes that suit your style and which you’re proud to wear. From women to men.</p>
+      <ul class="flex justify-left mt-3 space-x-5">
+        <li>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                    </path>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="text-gray-500  hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </li>
+    
+    </ul>
+    </div>
+    <div class="w-full md:w-1/6 mb-8 md:mb-0">
+      <h5 class="text-black font-extrabold text-md tracking-widest mb-3">COMPANY</h5>
+      <ul class="list-none">
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">About</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Features</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Work</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Career</a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/6 mb-8 md:mb-0">
+      <h5 class="text-black font-extrabold text-md tracking-widest mb-3">HELP</h5>
+      <ul class="list-none">
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Customer Support</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Delivery Details</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Terms & Conditions</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/6 mb-8 md:mb-0">
+      <h5 class="text-black font-extrabold text-md tracking-widest mb-3">FAQ</h5>
+      <ul class="list-none">
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Account</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Manage Deliveries</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Orders</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Payments</a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/6">
+      <h5 class="text-black font-extrabold text-md tracking-widest mb-3">RESOURCES</h5>
+      <ul class="list-none">
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Free eBooks</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Development Tutorial</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">How to - Blog</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-gray-500 hover:text-blue-500 font-bold">Youtube Playlist</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+  </body>
+</html>
